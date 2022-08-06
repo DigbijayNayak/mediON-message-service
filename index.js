@@ -9,11 +9,11 @@ const client = new twilio(accountSid, authToken);
 const port = process.env.PORT;
 
 app.use(cors());
-app.get("/", (req, res) => {
+app.post("/", (req, res) => {
   res.send("Welcome to the Express Server");
 });
 
-app.get("/send-text", (req, res) => {
+app.post("/send-text", (req, res) => {
   const { recipient, textmessage } = req.query;
   try {
     client.messages
