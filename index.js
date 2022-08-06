@@ -1,11 +1,10 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const twilio = require("twilio");
 require("dotenv").config();
 const accountSid = process.env.ACCOUNT_SID;
 const authToken = process.env.AUTHTOKEN_ID;
-const client = new twilio(accountSid, authToken);
+const client = require("twilio")(accountSid, authToken);
 const port = process.env.PORT;
 
 app.use(cors());
