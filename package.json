@@ -1,13 +1,16 @@
 {
   "name": "medion-message-service",
   "version": "1.0.0",
-  "description": "",
+  "description": "MediON Message API Service",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "example",
+    "heroku"
+  ],
   "author": "Digbijay Nayak",
   "license": "ISC",
   "dependencies": {
