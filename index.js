@@ -9,7 +9,7 @@ const client = require("twilio")(
 const port = process.env.PORT;
 
 app.use(cors());
-app.post("/", (req, res) => {
+app.get("/", (req, res) => {
   res.send("Welcome to the Express Server");
 });
 
